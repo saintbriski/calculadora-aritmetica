@@ -23,11 +23,11 @@ const calculaResultado = () => {
 
 <template>
     <div class="container">
-<h1>Calculadora Aritmética</h1>
+<h1 class="mt-5 mb-3">Calculadora Aritmética</h1>
 <input class="form-control" type="text" v-model="estado.primeiroNumero" @input="calculaResultado" />
-<input type="text" class="form-control" v-model="estado.segundoNumero" @input="calculaResultado" />
+<input type="text" class="form-control mt-2" v-model="estado.segundoNumero" @input="calculaResultado" />
 
-<select v-model="estado.operacaoMatematica" @change="calculaResultado">
+<select class="mt-3 mb-1" v-model="estado.operacaoMatematica" @change="calculaResultado">
     <option value="soma">Soma</option>
     <option value="subtracao">Subtração</option>
     <option value="multiplicacao">Multiplicação</option>
